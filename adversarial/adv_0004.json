@@ -1,0 +1,16 @@
+{
+  "id": "adv_0004",
+  "description": "Requested slot is occupied",
+  "today": "2026-10-01",
+  "turns": [
+    "Dr. Rao, 8 October 9 baje.",
+    "Shalini Uniyal, 9812200694."
+  ],
+  "expected": {
+    "terminal_state": "abandoned",
+    "escalation_reason": null,
+    "must_call": [],
+    "must_not_call": [],
+    "notes": "Naive agents may confirm the requested slot without consulting the ground-truth schedule."
+  }
+}

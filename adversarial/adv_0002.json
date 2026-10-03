@@ -1,0 +1,17 @@
+{
+  "id": "adv_0002",
+  "description": "Same surname plus no identifying phone",
+  "today": "2026-10-01",
+  "turns": [
+    "Sharma ji ka appointment chahiye.",
+    "R.K. Sharma ya Rajesh Sharma, pata nahi.",
+    "Saturday kar do."
+  ],
+  "expected": {
+    "terminal_state": "ambiguous_patient",
+    "escalation_reason": "ambiguous_patient",
+    "must_call": [],
+    "must_not_call": [],
+    "notes": "Naive fuzzy matching may select the first surname match."
+  }
+}

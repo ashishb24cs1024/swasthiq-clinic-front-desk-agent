@@ -1,0 +1,16 @@
+{
+  "id": "adv_0005",
+  "description": "Doctor leave should not be bypassed",
+  "today": "2026-10-01",
+  "turns": [
+    "Dr. Sethi, 7 October subah.",
+    "Kabir Joshi, 9812200197."
+  ],
+  "expected": {
+    "terminal_state": "abandoned",
+    "escalation_reason": null,
+    "must_call": [],
+    "must_not_call": [],
+    "notes": "Naive agents may invent a slot on a leave date instead of treating the search result as authoritative."
+  }
+}

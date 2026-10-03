@@ -1,0 +1,13 @@
+AI coding transcript / implementation notes
+
+No external LLM was used to generate runtime decisions in this submission. The implementation was produced with an AI coding assistant, but the runtime agent is deterministic by design.
+
+Key instructions given while building:
+1. Read schema.md, clinic.json and all 15 supplied conversations before implementing anything.
+2. Build six ground-truth tools with validation and no LLM calls inside the tool layer.
+3. Make date parsing depend on request.today and handle Hindi/English mixed turns.
+4. Put an absolute clinical safety gate before booking/rescheduling/cancellation.
+5. Never guess ambiguous patients; use lookup candidates and escalate.
+6. Prevent concurrent double-booking with a critical section while preserving per-request state reset.
+7. Add non-happy-path tests, adversarial cases, README, DECISIONS.md and a React UI matching the two required screens.
+8. Run the supplied runner repeatedly and fix every deterministic example failure before packaging.
